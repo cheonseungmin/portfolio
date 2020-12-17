@@ -1,5 +1,4 @@
-import React, { useRef } from 'react';
-import ReactDOM from 'react-dom';
+import React from 'react';
 import styledComponents from 'styled-components';
 
 const Circles =  styledComponents.div`

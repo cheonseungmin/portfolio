@@ -1,16 +1,21 @@
-import React from 'react';
+import React, { useState } from 'react';
 import ReactDOM from 'react-dom';
 
 import Header from './Header.jsx';
-// import NavigationBar from './NavigationBar';
-// import Contents from './Contents';
-// import Footer from './Footer';
+import Contents from './Contents.jsx';
+
+import { AppContext } from './AppContext.jsx';
 
 const App = () => {
 
+    const [contentType, setContentType] = useState('About Me');
+
     return (
         <div>
-            <Header />
+            <AppContext.Provider value={ { contentType, setContentType } }>
+                <Header />
+                <Contents />
+            </AppContext.Provider>
         </div>
     )
 }
