@@ -1,5 +1,4 @@
 import React, { useState, useRef, useEffect } from 'react';
-import ReactDOM from 'react-dom';
 import styledComponents from 'styled-components';
 
 import Slide from './Slide.jsx';
@@ -8,7 +7,7 @@ import SlideCircles from './SlideCircles.jsx';
 
 const Container = styledComponents.div`
     position: relative;
-    width: 50%;
+    width: 100%;
     margin: auto;
     overflow: hidden;
 `;

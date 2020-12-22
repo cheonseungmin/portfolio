@@ -8,7 +8,13 @@ import Contents from './Contents.jsx';
 import { AppContext } from './AppContext.jsx';
 
 const Wrapper = styledComponents.div`
-    background-image: url('../img/index/body.png');
+    width: 100%;
+    max-width: 1000px;
+    flex: 1px;
+    margin: 0 auto;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
 `
 
 const App = () => {

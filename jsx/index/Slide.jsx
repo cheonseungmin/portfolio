@@ -1,5 +1,4 @@
 import React from 'react';
-import ReactDOM from 'react-dom';
 import styledComponents from 'styled-components';
 
 const Image = styledComponents.img`

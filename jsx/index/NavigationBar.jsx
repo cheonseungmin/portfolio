@@ -5,14 +5,20 @@ import { AppContext } from './AppContext.jsx';
 import styledComponents from 'styled-components';
 
 const Navigation = styledComponents.nav`
-    width: 50%;
+    width: 100%;
     margin: auto;
     border-bottom: 1px solid gray;
 `
 
 const Unlist = styledComponents.ul`
-    text-align: center;
+    width: 100%;
     display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    flex: 1;
+    font-family: "Passion One", cursive;
+    font-style: italic;
+    box-sizing: border-box;
 `
 
 const List = styledComponents.li`
@@ -22,7 +28,13 @@ const List = styledComponents.li`
 `
 
 const Anchor = styledComponents.a`
-    font: small-caps bold 2rem sans-serif;
+    font-size: 2.3rem;
+    padding: 13px 0px;
+    cursor: pointer;
+    color: rgb(179, 179, 179);
+    box-sizing: border-box;
+    display: block;
+    
     transition: all 0.3s ease-in-out;
     color: ${ props =>
         props.contentType === props.inner?
