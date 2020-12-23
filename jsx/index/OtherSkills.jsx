@@ -51,7 +51,7 @@ const OtherSkills = () => {
                     Git Hub
                 </Item>
                 <Item>
-                    <SkillLogo src='../img/index/skillExpress.png'/>
+                    <SkillLogo src='../img/index/skillSlack.png'/>
                     Slack
                 </Item>
                 <Item>

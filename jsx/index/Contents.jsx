@@ -3,6 +3,7 @@ import styledComponents from 'styled-components';
 
 import { AppContext } from './AppContext.jsx';
 import AboutMe from './AboutMe.jsx';
+import Contact from './Contact.jsx';
 
 const Container = styledComponents.div`
     position: relative;
@@ -14,14 +15,20 @@ const Contents = () => {
 
     const { contentType } = useContext(AppContext);
 
-    switch (contentType) {
-        case 'About Me':
-            return (
-                <Container>
-                    <AboutMe />
-                </Container>
-            )
+    let contents;
+
+    if(contentType === 'About Me') {
+        contents = <AboutMe />;
+    } else if(contentType === 'Contact') {
+        contents = <Contact />;
     }
+
+    return (
+        <Container>
+            {contents}
+        </Container>
+    )
+    
 }
 
 export default Contents;
