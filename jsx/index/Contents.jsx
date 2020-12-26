@@ -4,6 +4,7 @@ import styledComponents from 'styled-components';
 import { AppContext } from './AppContext.jsx';
 import AboutMe from './AboutMe.jsx';
 import Contact from './Contact.jsx';
+import Project from './Project.jsx';
 
 const Container = styledComponents.div`
     position: relative;
@@ -21,6 +22,8 @@ const Contents = () => {
         contents = <AboutMe />;
     } else if(contentType === 'Contact') {
         contents = <Contact />;
+    } else if(contentType === 'Project') {
+        contents = <Project />;
     }
 
     return (
