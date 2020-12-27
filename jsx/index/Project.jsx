@@ -1,5 +1,6 @@
-import React from 'react';
+import React, { useState } from 'react';
 import styledComponents from 'styled-components';
+import ModalContainer from './ModalContainer.jsx';
 
 import ProjectToken from './ProjectToken.jsx';
 
@@ -20,6 +21,9 @@ const Grid = styledComponents.div`
 
 const Project = () => {
 
+    const [ visible1, setVisible1 ] = useState(false);
+    const [ visible2, setVisible2 ] = useState(false);
+
     return (
         <Wrapper>
             <Grid>
@@ -27,11 +31,21 @@ const Project = () => {
                     url={'../img/index/1.png'}
                     name={'문도 피구'}
                     text={'React로 구현한 실시간 1:1 웹 슈팅 게임'}
+                    setVisible={setVisible1}
+                />
+                <ModalContainer 
+                    visible={ visible1 } 
+                    setVisible={setVisible1}
                 />
                 <ProjectToken 
                     url={'../img/index/2.png'}
                     name={'무비 리뷰'}
                     text={'사이킷런 학습 모델을 통한 리뷰 텍스트 분류'}
+                    setVisible={setVisible2}
+                />
+                <ModalContainer 
+                    visible={ visible2 } 
+                    setVisible={setVisible2}
                 />
             </Grid>
         </Wrapper>

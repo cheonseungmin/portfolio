@@ -43,10 +43,10 @@ const ProjectText = styledComponents.div`
     }
 `
 
-const ProjectToken = ({ url, name, text }) => {
+const ProjectToken = ({ url, name, text, setVisible }) => {
 
     return (
-        <Wrapper>
+        <Wrapper onClick={() => setVisible(true)}>
             <ProjectImage imgSrc={ url } />
             <ProjectText>
                 <h3>{ name }</h3>
