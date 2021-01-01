@@ -2,9 +2,9 @@ import React, { useContext } from 'react';
 import styledComponents from 'styled-components';
 
 import { AppContext } from './AppContext.jsx';
-import AboutMe from './AboutMe.jsx';
-import Contact from './Contact.jsx';
-import Project from './Project.jsx';
+import AboutMe from '../aboutMe/./AboutMe.jsx';
+import Contact from '../contact/Contact.jsx';
+import Project from '../project/Project.jsx';
 
 const Container = styledComponents.div`
     position: relative;
