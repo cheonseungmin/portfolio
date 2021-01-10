@@ -14,6 +14,8 @@
 ![project](https://user-images.githubusercontent.com/63775931/104128931-9b025100-53ad-11eb-9e21-4cffdad21a3f.gif)
 ## ㄴProject
 
+![modla](https://user-images.githubusercontent.com/63775931/104132390-5338f500-53c0-11eb-871c-8e83ad7e6690.gif)   
+## ㄴ프로젝트 모달창
+
 ![슬라이드배너](https://user-images.githubusercontent.com/63775931/104128938-a0f83200-53ad-11eb-9ea8-c1ba49dcef48.gif)
 ## ㄴ슬라이드 배너
-
