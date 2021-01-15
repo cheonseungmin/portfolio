@@ -36,7 +36,7 @@ const Who = () => {
 
     return (
         <Wrapper>
-            <MeImg src='../img/index/me.jpg' />
+            <MeImg src='../img/index/me.png' />
             
             <MeText>
                 <img src='../img/index/4.png' />
